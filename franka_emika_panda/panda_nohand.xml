@@ -185,8 +185,12 @@
                     <geom mesh="link7_6" material="dark_grey" class="panda/visual"/>
                     <geom mesh="link7_7" material="white" class="panda/visual"/>
                     <geom mesh="link7_c" class="panda/collision"/>
-                    <body name="attachment" pos="0 0 0.107" quat="0.3826834 0 0 0.9238795">
-                      <site name="attachment_site"/>
+                    <!-- <body name="attachment" pos="0 0 0.107" quat="0.3826834 0 0 0.9238795">
+                      <site name="attachment_site"/> -->
+                    <body name="ee_point" pos="0 0 0.15">
+                      <inertial pos="0 0 0" mass="0.001" diaginertia="1e-9 1e-9 1e-9"/>
+                      <!-- no joint = welded to parent -->
+                    </body>
                     </body>
                   </body>
                 </body>
